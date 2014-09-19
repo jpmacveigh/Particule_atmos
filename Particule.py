@@ -61,7 +61,7 @@ class Particule:
         part = self.transfAdiabSeche(pc-self.pression)
         t=(part.temperature+part.temperaturePointDeRosee)/2.
         return Particule(pc,t,t)
-    def TwZero(self,Tw): # à debugger
+    def TwZero(self,Tw): # à debugger car il se produit une division par zéro
         L=2500.
         Cp=1005.
         Pa=2.53*10**15
