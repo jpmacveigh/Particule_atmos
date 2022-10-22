@@ -70,22 +70,22 @@ class Particule:
         return ret
 
     def affiche (self): # affichage des paramètres de la particule
-        print "*********************"
-        print "donnee pression : ",self.pression," hPa"
-        print "donnee temperature : ",self.temperature,"C"
-        print "donnee temperature du point de rosee: ",self.temperaturePointDeRosee,"C"
-        print "  calculee temperature potentielle: ",self.temperaturePotentielle(),"C"
-        print "  calculee saturee: ",self.isSaturee()," (booleen)"
-        print "  calculee pression de vapeur: ",self.tensionDeVapeur()," hPa"
-        print "  calculee pression de vapeur saturante: ",self.tensionDeVapeurSaturante()," hPa"
-        print "  calculee humidite relative: ",self.humiditeRelative()," %"
-        print "  calculee rapport de melange : ",self.rapportDeMelange()," g/kg"
-        print "  calculee rapport de melange saturant: ",self.rapportDeMelangeSaturant()," g/kg"
-        print "*********************"
+        print ("*********************")
+        print ("donnee pression : ",self.pression," hPa")
+        print ("donnee temperature : ",self.temperature,"C")
+        print ("donnee temperature du point de rosee: ",self.temperaturePointDeRosee,"C")
+        print ("  calculee temperature potentielle: ",self.temperaturePotentielle(),"C")
+        print ("  calculee saturee: ",self.isSaturee()," (booleen)")
+        print ("  calculee pression de vapeur: ",self.tensionDeVapeur()," hPa")
+        print ("  calculee pression de vapeur saturante: ",self.tensionDeVapeurSaturante()," hPa")
+        print ("  calculee humidite relative: ",self.humiditeRelative()," %")
+        print ("  calculee rapport de melange : ",self.rapportDeMelange()," g/kg")
+        print ("  calculee rapport de melange saturant: ",self.rapportDeMelangeSaturant()," g/kg")
+        print ("*********************")
 particule=Particule(700,5.,-6.)  # voir Triplet et Roche page 72
 particule.affiche()
 particule.particuleSaturee().affiche()
-print particule.TwZero(0.)
+print (particule.TwZero(0.))
 
 particule=Particule(850,10,-10)  # voir S. Malardel 2eme édition page 215
 particule.affiche()
